@@ -71,7 +71,9 @@ console.log(k);
 // 7.Find of even numbers(e.g: 2,4,6...) in 16. And every number to the power of 2.
 // Use for loop, 16 is enter this list
 let seven =1;
-for (let x = 1; x <=16; x++) {
-  if (x % 2 == 0) 
+while (let x = 1; x <=16; x++) {
+  if (x % 2 == 0){
   console.log(`${x}, ${x**2}`);
+else{
+  console.log(seven)
 }
