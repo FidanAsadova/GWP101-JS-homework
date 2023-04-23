@@ -33,12 +33,17 @@ incrementBtn.addEventListener("click", function () {
   result.innerText = counter;
   //   this.setAttribute("disabled", "true");
 });
+
 decrementBtn.addEventListener("click", function () {
-  counter -= 1;
-  result.innerText = counter;
+  if (result.innerText > 0) {
+    counter -= 1;
+  }
+  return result.innerText = counter;
   //   this.setAttribute("disabled", "true");
 });
 
+// let set = 0;
 // inputBtn.addEventListener("click", function () {
-    
-//   });
+//   set += counter;
+//   result.innerText = set;
+// });
