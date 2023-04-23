@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .start{
+        background-color: green;
+        font-size: 24px;
+        color: white;
+        padding: 5px 15px;
+        border-color: transparent;
+
+    }
+    .stop{
+        background-color: red;
+        font-size: 24px;
+        color: white;
+        padding: 5px 15px;
+        margin-bottom: 30px;
+        border-color: transparent;
+
+    }
+    .result{
+        color: blue;
+        font-size: 24px;
+    }
+
+    .increment, .decrement{
+        padding: 5px 15px;
+        background-color:cadetblue;
+        color: white;
+        border-color: transparent;
+        margin-bottom: 30px;
+        font-size: 24px;
+
+    }
+    .reset{
+        padding: 5px 15px;
+        background-color: darkorange;
+        border-color: transparent;
+        color: black;
+        font-size: 24px;
+
+    }
+    .inputButton{
+        background-color: pink;
+        color: black;
+        padding: 5px 25px;
+        border-color: transparent;
+    }
+</style>
+<body>
+    <button class="start">Start</button>
+    <span class="result">0</span>
+    <button class="stop">Stop</button>
+    <br>
+    <button class="increment">Increment by 1</button>
+    <button class="decrement">Decrement by 1</button>
+    <br>
+    <button class="reset">RESET</button>
+    <script src="./script.js"></script>
+    <br>
+    <h1>Bonus:</h1>
+    <input type="text" id="bonusText" style="border-color: palevioletred;">
+    <button class="inputButton">Increment By Input Value</button>
+    
+</body>
+</html>
