@@ -1,0 +1,51 @@
+.allDiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  height: 70vh;
+  width: 400px;
+  background-color: bisque;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#blackBG {
+  background-color: black;
+  width: 245px;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 25px;
+  color: white;
+  text-align: end;
+  font-size: large;
+  padding: 0 4px;
+}
+
+#value1,
+#value2 {
+  height: 20px;
+  width: 110px;
+}
+
+#addition,
+#substract,
+#multiply,
+#division,
+#reset {
+  width: 250px;
+  height: 25px;
+  font-weight: bolder;
+}
+
+#reset {
+  border: 2px solid black;
+  background-color: orangered;
+}
