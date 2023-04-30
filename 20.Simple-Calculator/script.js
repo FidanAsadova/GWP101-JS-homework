@@ -18,6 +18,7 @@ additionBtn.addEventListener("click", function () {
     alert("Value is empty");
   }
 });
+
 substractBtn.addEventListener("click", function () {
   if (value1.value && value2.value) {
     let sub = +value1.value - +value2.value;
@@ -26,6 +27,8 @@ substractBtn.addEventListener("click", function () {
     alert("Value is empty");
   }
 });
+
+
 multiplyBtn.addEventListener("click", function () {
   if (value1.value && value2.value) {
     let multy = +value1.value * +value2.value;
@@ -34,6 +37,9 @@ multiplyBtn.addEventListener("click", function () {
     alert("Value is empty");
   }
 });
+
+///
+
 divisionBtn.addEventListener("click", function () {
   if (value1.value && value2.value) {
     let divis = +value1.value / +value2.value;
@@ -42,6 +48,8 @@ divisionBtn.addEventListener("click", function () {
     alert("Value is empty");
   }
 });
+
+
 resetBtn.addEventListener("click", function () {
   value1.value = "";
   value2.value = "";
