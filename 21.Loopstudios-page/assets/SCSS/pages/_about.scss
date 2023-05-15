@@ -1,0 +1,71 @@
+#about {
+  height: 150vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+
+  .all-about {
+    height: 120vh;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    .about-foto {
+      display: flex;
+      align-items: center;
+      max-width: 50%;
+    }
+    .white-parag {
+      display: flex;
+      align-items: end;
+      max-width: 50%;
+      .white-text {
+        background-color: white;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        position: absolute;
+        padding: 2%;
+        h1 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 200;
+          font-size: 50px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          color: grey;
+          font-size: medium;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #about {
+    height: 200vh;
+    margin-top: 5%;
+    max-width: 400px;
+    padding: 20px;
+    .all-about {
+      display: flex;
+      flex-direction: column;
+      position: static;
+      .about-foto,
+      .white-parag {
+        height: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        position: static;
+        .white-text {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

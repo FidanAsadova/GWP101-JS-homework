@@ -1,0 +1,125 @@
+footer {
+  height: 160px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  //   margin-top: 5%;
+  .all-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-left {
+      width: 50%;
+      .footer-logo {
+        h1 {
+          color: white;
+          font-family: "Roboto", sans-serif;
+          font-size: 30px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+      .footer-menu {
+        .all-menu {
+          ul {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+            li {
+              a {
+                text-decoration: none;
+                color: white;
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                position: relative;
+                &:hover::after {
+                  content: "";
+                  border: 1px solid white;
+                  display: block;
+                  position: absolute;
+                  width: 100%;
+                  top: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-right {
+      width: 50%;
+      .end-text {
+        display: none;
+      }
+      .media-icons {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          gap: 30px;
+          li {
+            a {
+              position: relative;
+              &:hover::after {
+                content: "";
+                border: 1px solid white;
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  footer {
+    height: 450px;
+    .all-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .footer-left {
+        .footer-logo {
+          display: flex;
+          justify-content: center;
+        }
+        .footer-menu {
+          .all-menu {
+            ul {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
+      }
+      .footer-right {
+        .media-icons {
+          ul {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .end-text {
+          display: flex;
+          justify-content: center;
+          width: 250px;
+          padding: 30px;
+          p{
+            color: gray;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

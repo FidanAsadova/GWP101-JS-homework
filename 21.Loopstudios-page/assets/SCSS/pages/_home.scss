@@ -1,0 +1,137 @@
+#home {
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container {
+    height: 100vh;
+    #header {
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+          #logo-h1 {
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-size: 35px;
+            font-weight: 800;
+            cursor: pointer;
+          }
+        }
+        nav {
+          ul {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            a {
+              color: white;
+              text-decoration: none;
+              font-family: "Roboto", sans-serif;
+              font-weight: 500;
+              font-size: 15px;
+              position: relative;
+              &:hover::after {
+                content: "";
+                border: 1px solid white;
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 25px;
+              }
+            }
+          }
+        }
+        .mobile-icon {
+          display: none;
+        }
+      }
+    }
+    .parag {
+      height: 80vh;
+      display: flex;
+      align-items: end;
+      .home-parag {
+        border: 2px solid white;
+        height: 300px;
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        h1 {
+          color: white;
+          font-family: "Roboto", sans-serif;
+          font-weight: 100;
+          font-size: 75px;
+        }
+      }
+    }
+    .click-menu {
+      display: none;
+      .click-div {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        justify-content: end;
+        ul {
+          li {
+            a {
+              text-decoration: none;
+              color: white;
+              font-family: "Roboto", sans-serif;
+              font-weight: 300;
+              font-size: 30px;
+              position: relative;
+              &:hover::after {
+                content: "";
+                border: 1px solid white;
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #home {
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container {
+      #header {
+        .header-container {
+          .logo {
+            #logo-h1 {
+              font-size: 25px;
+            }
+          }
+          nav {
+            display: none;
+          }
+          .mobile-icon {
+            display: block;
+            cursor: pointer;
+          }
+        }
+      }
+      .parag {
+        .home-parag {
+          height: 150px;
+          h1 {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
