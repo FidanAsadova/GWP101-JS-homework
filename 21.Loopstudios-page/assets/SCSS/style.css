@@ -478,7 +478,7 @@ footer .all-footer .footer-right .media-icons ul li a:hover::after {
 
 @media only screen and (max-width: 991px) {
   #our-creations {
-    height: 420vh;
+    height: 400vh;
   }
   #our-creations .container .all-our .head {
     display: flex;
